@@ -12,7 +12,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "build:widget": "parcel build src/index.js --no-source-maps --dist-dir docs",
     "test": "react-scripts test",
