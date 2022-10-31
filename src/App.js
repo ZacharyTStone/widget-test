@@ -5,7 +5,9 @@ function App({ domElement }) {
   const color = domElement.getAttribute("data-color")
 
   return (
-    <div className="App">
+    <div className="App" style={{
+      backgroundColor: color ? color : "white"
+    }}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
