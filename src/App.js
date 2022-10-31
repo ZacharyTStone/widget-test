@@ -6,7 +6,7 @@ function App({ domElement }) {
 
   return (
     <div className="App" style={{
-      backgroundColor: color ? color : "white"
+      backgroundColor: color ? `${color}` : "white"
     }}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
