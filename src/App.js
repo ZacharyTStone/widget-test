@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App({ domElement }) {
+  const color = domElement.getAttribute("data-color")
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My favorite color is {color}
         </p>
         <a
           className="App-link"
